@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>סמיילי ענק</title>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e0f7fa;
+      direction: rtl;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .smiley {
+      width: 80vmin;
+      height: 80vmin;
+      background-color: yellow;
+      border-radius: 50%;
+      position: relative;
+      animation: tilt 3s infinite;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3), 0 0 50px rgba(255,255,0,0.5);
+    }
+    .eye {
+      width: 15%;
+      height: 15%;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 30%;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    .left {
+      left: 20%;
+    }
+    .right {
+      left: 65%;
+    }
+    .mouth {
+      width: 50%;
+      height: 25%;
+      border-bottom: 4vmin solid black;
+      border-radius: 0 0 50% 50%;
+      position: absolute;
+      bottom: 20%;
+      left: 25%;
+    }
+    .text {
+      font-family: 'Assistant', sans-serif;
+      font-size: 7vmin; /* טקסט גדול יותר */
+      font-weight: 700;
+      margin-top: 2vmin;
+      margin-bottom: 3vmin; /* מרווח גדול יותר מתחת */
+      text-align: right;
+      direction: rtl;
+      transition: all 0.3s ease; /* הנפשה חלקה */
+    }
+    .april-fools {
+      font-family: 'Assistant', sans-serif;
+      font-size: 6vmin; /* טקסט גדול יותר */
+      font-weight: 700;
+      margin-top: 1vmin;
+      text-align: right;
+      direction: rtl;
+      transition: all 0.3s ease; /* הנפשה חלקה */
+    }
+    /* אפקט ריחוף */
+    .text:hover, .april-fools:hover {
+      color: #ff6347; /* שינוי צבע */
+      transform: scale(1.1); /* הגדלה קלה */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="smiley">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="mouth"></div>
+    </div>
+    <p class="text">נראה לך?</p>
+    <p class="april-fools">1 באפריל שמח!</p>
+  </div>
+</body>
+</html>
